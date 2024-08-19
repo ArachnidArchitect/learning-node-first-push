@@ -9,6 +9,7 @@ app.use(cors({
     origin:'http://localhost:8080',
     credentials:true
 }))
+app.use(express.static('public'))
 app.use('/fetchUsers', userRouter)
 app.use('/fetchFruits', fruitsRouter)
 
