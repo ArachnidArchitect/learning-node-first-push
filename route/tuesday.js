@@ -5,7 +5,7 @@ import {checkUser, verifyToken} from '../middleware/authenticate.js'
 const userRouter = express.Router()
 const fruitsRouter = express.Router()
 
-fruitsRouter.get('/', getFruits)
+fruitsRouter.get('/',getFruits)
 
 userRouter.get('/', getUsers)
 userRouter.get('/:id', getUser)
